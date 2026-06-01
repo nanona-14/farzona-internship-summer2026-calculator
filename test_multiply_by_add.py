@@ -8,5 +8,3 @@ class TestMultiplyByAdd(unittest.TestCase):
         # Этот вызов вызовет ошибку, так как функции еще нет
         self.assertEqual(multiply_by_add(3, 4), 12)
 
-if __name__ == '__main__':
-    unittest.main()
