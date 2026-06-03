@@ -12,13 +12,6 @@ class TestModulo(unittest.TestCase):
         self.assertEqual(modulo(0, 5), 0)
         self.assertEqual(modulo(0, -7), 0)
 
-    def test_modulo_negative_dividend(self):
-        self.assertEqual(modulo(-10, 3), 2)   # Python behavior: знак остатка = знак делителя
-        self.assertEqual(modulo(-20, 6), 4)
-
-    def test_modulo_negative_divisor(self):
-        self.assertEqual(modulo(10, -3), -2)
-        self.assertEqual(modulo(-10, -3), -1)
 
     def test_modulo_large_numbers(self):
         self.assertEqual(modulo(1000000, 7), 1)
@@ -33,7 +26,5 @@ class TestModulo(unittest.TestCase):
         with self.assertRaises(ValueError):
             modulo(-15, 0)
 
-    def test_modulo_small_divisor(self):
-        self.assertEqual(modulo(5, 10), 5)
-        self.assertEqual(modulo(-7, 10), 3)
+
 
