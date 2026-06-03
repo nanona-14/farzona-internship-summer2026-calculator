@@ -34,6 +34,3 @@ class TestDivide(unittest.TestCase):
         self.assertEqual(divide_by_subtract(5, 10), 0)
         self.assertEqual(divide_by_subtract(-5, 10), 0)
 
-
-if __name__ == '__main__':
-    unittest.main()
